@@ -1,0 +1,53 @@
+.btn-group button {
+    background-color: rgb(116, 116, 116); /* Grey background */
+    border: 1px solid rgb(0, 0, 0)black; /* Black border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-weight: bold;
+}
+        
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #474747;
+}
+
+.btn-power button {
+    background-color: rgb(255, 0, 0); /* Red background */
+    border: 1px solid black; /* Black border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-weight: bold;
+}
+
+.btn-power button:hover {
+    background-color: rgb(175,0,0);
+}
+
+.btn-numbers button {
+    background-color: white; /* Red background */
+    border: 1px solid black; /* Black border */
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-weight: bold;
+}
+
+.btn-numbers button:hover {
+    background-color: rgb(175,175,175);
+}
