@@ -1,0 +1,62 @@
+/* 
+CECS 525 Final Project
+Ryan Petit
+5 December 2018 
+*/
+
+/* Button Group Elements */
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn-group button {
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-weight: bold;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Button Tools Elements */
+
+.btn-group .btn-tools {
+    background-color: rgb(116, 116, 116); /* Grey background */
+    border: 1px solid black; /* Black border */
+    color: white; /* White text */
+}
+        
+/* Add a background color on hover */
+.btn-group .btn-tools:hover {
+    background-color: rgb(70,70,70);
+}
+
+/* Button Power Elements */
+
+.btn-group .btn-power {
+    background-color: rgb(255, 0, 0); /* Red background */
+    border: 1px solid black; /* Black border */
+    color: white; /* White text */
+}
+
+.btn-group .btn-power:hover {
+    background-color: rgb(200,0,0);
+}
+
+/* Button Numbers Elements */
+
+.btn-group .btn-numbers  {
+    background-color: white; /* Red background */
+    border: 1px solid black; /* Black border */
+    color: black; /* White text */
+}
+
+.btn-group .btn-numbers:hover {
+    background-color: rgb(200,200,200);
+}
