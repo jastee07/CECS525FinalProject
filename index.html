@@ -1,0 +1,174 @@
+<!-- CECS 525 Final Project -->
+<!-- Ryan Petit -->
+<!-- 5 December 2018 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <title>Deltion Live Streaming</title> -->
+    <!-- <script language="javascript" type="text/javascript" src="../swfobject.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="web_tool_style.css"> -->
+</head>
+
+
+
+<body>
+
+    <video id="movie" width="460" height="306" preload autoplay>
+        <source src=""  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+
+    <form method="post" action="/">
+
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-power" id="power">POWER</button>
+          <button style="width:33.3%" class="btn-tools" id="raise_vol">VOL +</button>
+          <button style="width:33.3%" class="btn-tools" id="func_stop">FUNC/STOP</button>
+      </div>
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-tools" id="rwd">RWD</button>
+          <button style="width:33.3%" class="btn-tools" id="play_pause">PLAY / PAUSE</button>
+          <button style="width:33.3%" class="btn-tools" id="ffwd">FFWD</button>
+      </div>
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-tools" id="down">DOWN</button>
+          <button style="width:33.3%" class="btn-tools" id="lower_vol">VOL -</button>
+          <button style="width:33.3%" class="btn-tools" id="up">UP</button>
+      </div>
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-numbers" id="zero">0</button>
+          <button style="width:33.3%" class="btn-tools" id="eq">EQ</button>
+          <button style="width:33.3%" class="btn-tools" id="st_rept">ST/REPT</button>
+      </div>
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-numbers" id="one">1</button>
+          <button style="width:33.3%" class="btn-numbers" id="two">2</button>
+          <button style="width:33.3%" class="btn-numbers" id="three">3</button>
+      </div>
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-numbers" id="four">4</button>
+          <button style="width:33.3%" class="btn-numbers" id="five">5</button>
+          <button style="width:33.3%" class="btn-numbers" id="six">6</button>
+      </div>
+      <div class="btn-group" style="width:50%">
+          <button style="width:33.3%" class="btn-numbers" id="seven">7</button>
+          <button style="width:33.3%" class="btn-numbers" id="eight">8</button>
+          <button style="width:33.3%" class="btn-numbers" id="nine">9</button>
+      </div>
+    </form>
+
+    <!-- <script language="javascript" type="text/javascript" src="web_tool_script.js"></script> -->
+    <script>
+        var URL = "http://localhost:4000";
+        document.getElementById("power").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("power");
+        }
+        document.getElementById("raise_vol").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("raise_vol");
+        }
+        document.getElementById("func_stop").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("func_stop");
+        }
+        document.getElementById("rwd").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("rwd");
+        }
+        document.getElementById("play_pause").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("play_pause");
+        }
+        document.getElementById("ffwd").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("ffwd");
+        }
+        document.getElementById("down").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("down");
+        }
+        document.getElementById("lower_vol").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("lower_vol");
+        }
+        document.getElementById("up").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("up");
+        }
+        document.getElementById("zero").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("zero");
+        }
+        document.getElementById("eq").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("eq");
+        }
+        document.getElementById("st_rept").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("st_rept");
+        }
+        document.getElementById("one").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("one");
+        }
+        document.getElementById("two").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("two");
+        }
+        document.getElementById("three").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("three");
+        }
+        document.getElementById("four").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("four");
+        }
+        document.getElementById("five").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("five");
+        }
+        document.getElementById("six").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("six");
+        }
+        document.getElementById("seven").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("seven");
+        }
+        document.getElementById("eight").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("eight");
+        }
+        document.getElementById("nine").onclick = function() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', URL);
+          xhr.send("nine");
+        }
+    </script>
+</body>
+
+</html>
