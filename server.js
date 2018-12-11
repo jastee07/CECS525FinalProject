@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var {exec} = require('child_process')
-var form = fs.readFileSync('./web_tool.html', {encoding: 'utf8'});
+var form = fs.readFileSync('./index.html', {encoding: 'utf8'});
 
 http.createServer(function(req, res) {
   if (req.method === 'GET') {
